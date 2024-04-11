@@ -10,9 +10,9 @@ function App() {
     <Navbar />
     <Hero />
     </section>
-    <section><Parallax /></section>
+    <section><Parallax  type="services"/></section>
     <section>services</section>
-    <section>parallax</section>
+    <section><Parallax  type="portfolio"/></section>
     <section>portfolio1</section>
     <section>portfolio1</section>
     <section>portfolio1</section>

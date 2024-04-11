@@ -1,7 +1,4 @@
-html{
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
+
 body{
   background-color: #000;
   color: white;
@@ -12,7 +9,7 @@ a{
 }
 section{
   min-height: 100vh;
-  scroll-snap-align: center;
+ 
   font-family: "DM Sans", sans-serif;
 }
 .home{
