@@ -1,0 +1,254 @@
+.hero{
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+
+
+.heroCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1366px;
+    margin: auto;
+}
+.IntroSec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: max(1vw, 1rem) max(1vw, 2rem);
+}
+
+
+.introText > h1,h2,p{
+   margin: 0;
+   text-align: center;
+}
+.introText > h1{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.introText > p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.introText span{
+    color: rgba(255, 0, 0, 0.886);
+}
+.profileSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 22rem;
+    margin: 2rem 0;
+    perspective: 1000px;
+}
+.yoda{
+    width: 200px;
+    aspect-ratio: 8 / 12;
+    position: relative;
+    /* background-image: url("../../assets/yoda/ninjalare.jpg"); */
+   transform-style: preserve-3d;
+    transition: rotate 300ms ease;
+}
+.yoda:hover{
+    rotate: x 20deg;
+}
+.yoda::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: #9ccd69; */
+    z-index: 100;
+    background-image: radial-gradient(circle, transparent 100px, black);
+    opacity: 0;
+    transition: opacity 300ms;
+}
+.yoda:hover::before{
+    opacity: 1;
+}
+.yoda::after{
+    content: '';
+    position: absolute;
+    inset: 80% .5rem .5rem;
+    translate: 0 ;
+    transform: translateZ(-100px);
+    filter: blur(1rem);
+    background-color: rgba(161, 3, 3, 0.584);
+    z-index: 1;
+    transition: rotate 300ms, translate 300ms ;
+}
+.yoda:hover::after{
+    rotate: x -20deg;
+    translate: 0 60px;
+}
+.bg-image{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.fighterText, .fighter{
+    position: absolute;
+}
+.fighterText{
+    z-index: 1000;
+    width: 70%;
+    margin-inline: auto;
+    inset: auto 0 1rem;
+    transform: translateY(0) translateZ(20px);
+    transition: 300ms;
+}
+.yoda:hover .fighterText{
+    filter: invert(1);
+    transform: translateY(-1rem) translateZ(20px);
+    rotate: x -20deg;
+}
+
+.fighter{
+    bottom: 2rem;
+    scale: 1.1;
+    opacity: 0;
+    transform-origin: bottom;
+    transition: 300ms;
+    z-index: 100;
+    filter: drop-shadow(2px 2px 10px red);
+    left: -1rem;
+}
+.yoda img{
+    max-width: 100%;
+}
+.yoda:hover .fighter{
+    opacity: 1 !important;
+    transform: translateY(-1rem) translateZ(-10px) !important;
+    rotate: x -20deg !important;
+}
+.introText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.buttonCont{
+    display: flex;
+    gap: 1rem;
+}
+.buttonCont button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(178, 7, 7);
+}
+.buttonCont button:nth-child(1){
+    background-color: rgb(178, 7, 7);
+    color: white;
+}
+.seemore{
+    animation: blinking 1.5s linear infinite alternate;
+    height: 2rem;
+}
+@keyframes blinking {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+.stack{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    margin: auto;
+    margin: 1rem auto;
+}
+.mongo,.express,.react,.node{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mongo p{
+    color: #00684a;
+}
+.react p{
+    color: #5edcfb;
+}
+.node p{
+    color: #9ccd69;
+}
+.stack p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin:1px 0 0;
+}
+.mongoImgCont,.expressImgCont,.reactImgCont,.nodeImgCont{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stack img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width: 480px){
+    
+    .introText > h1{
+        max-width: 40rem;
+    }
+    
+}
+@media(min-width: 640px){
+    
+    .introText > h1{
+        font-size: 4vw;
+    line-height: 6vw;
+    text-align: left;
+    }
+    .introText{
+        max-width: 60%;
+        align-items: flex-start;
+    }
+    .stack{
+        justify-content: flex-start;
+    }
+  
+}
+@media(min-width: 768px){
+   
+   
+}
+@media(min-width: 1200px){
+    
+    .introText > h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .yoda{
+        width: 300px;
+        justify-content: center;
+    }
+}
