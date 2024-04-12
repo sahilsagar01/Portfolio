@@ -7,14 +7,16 @@ a{
   text-decoration: none;
   color: inherit;
 }
-section{
-  min-height: 100vh;
- 
+
+.section{
+  height: 100vh;
   font-family: "DM Sans", sans-serif;
 }
+
 .home{
   background-image: url("./assets/profileimage/herowall2.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
+  min-height: 100vh;
 }

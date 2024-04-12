@@ -10,13 +10,13 @@ function App() {
     <Navbar />
     <Hero />
     </section>
-    <section><Parallax  type="services"/></section>
-    <section>services</section>
-    <section><Parallax  type="portfolio"/></section>
-    <section>portfolio1</section>
-    <section>portfolio1</section>
-    <section>portfolio1</section>
-    <section>contacts</section>
+    <section className='section'><Parallax type="services"/></section>
+    <section className='section'>services</section>
+    <section className='section'><Parallax type="portfolio"/></section>
+    <section className='section'>portfolio1</section>
+    <section className='section'>portfolio1</section>
+    <section className='section'>portfolio1</section>
+    <section className='section'>contacts</section>
     </div>
   );
 }
