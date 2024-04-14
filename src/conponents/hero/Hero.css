@@ -109,12 +109,13 @@
    background-color: transparent;
     text-align: center;
     color: black;
+    text-shadow: 4px 4px 10px #fff;
 }
 .yoda:hover .fighterText{
     filter: invert(1);
     transform: translateY(-1rem) translateZ(20px);
     rotate: x -20deg;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fighter{
