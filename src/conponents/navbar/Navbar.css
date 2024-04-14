@@ -13,12 +13,12 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0 20px;
+    padding: 0 min(2vw, 20px);
 }
 .wrapper span{
     font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .social_cont{
     padding: 10px;
@@ -26,7 +26,7 @@
     justify-content: center;
     gap: 2rem;
     border-radius: 30px;
-    background-color: #27252552;
+    background-color: #cbc9c952;
     backdrop-filter: blur(20px);
 }
 

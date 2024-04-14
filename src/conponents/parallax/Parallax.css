@@ -6,64 +6,38 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    perspective: 1000px;
+    position: relative;
+    object-fit: cover;
 }
+.parallax img{
+    position: absolute;
+    bottom: 0;
+}
+
 .parallax h1{
     font-size: 50px;
-    position: relative;
-    z-index: 5;
-}
-/* .mountains{
-    position: absolute;
-    background-image: url("../../assets/parallax/mountainsparallax.png");
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    filter: saturate(300%) brightness(60%);
-}
-.planets{
-    position: absolute;
-    background-image: url("../../assets/parallax/moonParallax.png");
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-.stars{
-    position: absolute;
-    background-image: url("../../assets/parallax/starsParallax.png");
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-} */
-.redSun{
-    position: absolute;
-    width: min(30rem, 150%);
-    top: 1rem;
-    z-index: 1;
-}
-.redTemple{
-    position: absolute;
-    width:min(35rem, 50%);
-    right: 0;
-    bottom: 4rem;
-    z-index: 2;
-}
-.landMount{
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-    bottom: 0px;
-}
-.tree{
-    position: absolute;
-    width: 100%;
-    height: min(90vh, 100%);
+    text-shadow: 4px 4px 5px rgb(0, 0, 0,0.4);
     z-index: 4;
-    bottom: 0px;
+}
+.parallax .samorai{
+    position: absolute;
+    width: max( 30%,19rem);
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+.land{
+    position: absolute;
+
+    width: 100%;
+  
+    z-index: 2;
+}
+.sun{
+    /* color: rgb(213, 101, 101); */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(30%, 30rem);
+    z-index: 1;
 }

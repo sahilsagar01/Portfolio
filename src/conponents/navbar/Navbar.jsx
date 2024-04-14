@@ -25,12 +25,12 @@ function Navbar() {
   return (
     <div className='navbar '>
     <motion.div initial={{opacity: 0,  y: -20}} animate={"visible"} variants={variants} transition={{duration: 0.5}} className='wrapper '>
-    <motion.span className=' ' initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.5}}>Portfolio</motion.span>
+    <motion.span initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.5}}>Portfolio</motion.span>
     <div className='social_cont flex items-center justify-center'>
    <Tooltip  title='GitHub'>
    <motion.a whileHover={{
     scale: 1.1,
-    color: "orange",
+    color: "rgb(255, 119, 0)",
     transition: { duration: 0.2 },
   }} target="_blank" href='https://github.com/sahilsagar01'><GitHubIcon /></motion.a>
    </Tooltip>
@@ -51,6 +51,7 @@ function Navbar() {
     <Tooltip title="X">
     <motion.a whileHover={{
     scale: 1.1,
+    color: "#ccc",
     transition: { duration: 0.2 },
   }} target="_blank" href='https://twitter.com/sagar_sahil1603'><XIcon /></motion.a>
     </Tooltip>

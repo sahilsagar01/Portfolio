@@ -1,12 +1,14 @@
 import React from 'react'
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LoginIcon from '@mui/icons-material/Login';
-import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
+// import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
+
+import resume from "../../assets/resume/Sahil_Kumar_Frontend_Developer.pdf"
 
 // yoda 
-import fighter from "../../assets/yoda/bulkFighter-removebg-preview.png"
-import fighttext from "../../assets/yoda/welcometof-removebg-preview.png"
-import yodaBackground from "../../assets/yoda/ninjalare.jpg"
+import fighter from "../../assets/yoda/prest-removebg-preview.png"
+import fighttext from "../../assets/yoda/hoverme-removebg-preview.png"
+import yodaBackground from "../../assets/yoda/yodabg.jpg"
 
 
 
@@ -31,9 +33,8 @@ function Hero() {
                      <h2>Hi, I'm <span>Sahil Sagar</span></h2>
                      <p>A Full Stack web Developer</p>
                 <div className='buttonCont'>
-                    <button>Resume <FileDownloadIcon /></button>
-                    <button>About me <LoginIcon /></button>
-                    <img className='seemore' src={scroll} alt='scroll image' />
+                <a href={resume} download={"Sahil_Kumar_Frontend_Developer.pdf"}> <button>Resume <FileDownloadIcon /></button></a>
+                    <img className='seemore' src={scroll} alt='scrollImage' />
                 </div>
                 <div className='stack'>
             <div className='mongo'>
@@ -57,9 +58,10 @@ function Hero() {
             </motion.div>
             <motion.div initial={{opacity: 0, x: 40}} animate={{opacity: 1, x: 0}} transition={{duration: 0.5}} className='profileSec'>
                 <div className='yoda'>
-                    <img className='fighterText' src={fighttext} alt='fighterText' />
+                    {/* <img className='fighterText' src={fighttext} alt='fighterText' /> */}
+                    <h1 className='fighterText'>Hi, I am here. </h1>
                     <motion.img initial={{opacity: 1, scale: 1.2}} animate={{opacity: 0, scale: 1}} transition={{duration: 1,delay: .5}} className='fighter' src={fighter} alt='fighter' />
-                    <img className='bg-image' src={yodaBackground} />
+                    <img className='bg-image' alt='' src={yodaBackground} />
                 </div>
             </motion.div>
         </div>

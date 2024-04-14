@@ -1,7 +1,7 @@
 
 body{
-  background-color: #000;
-  color: white;
+  background-color: #fff;
+  color: #fff;
 }
 a{
   text-decoration: none;
@@ -12,11 +12,14 @@ a{
   height: 100vh;
   font-family: "DM Sans", sans-serif;
 }
-
+.skillsSection{
+  min-height: 100vh;
+}
 .home{
-  background-image: url("./assets/profileimage/herowall2.jpg");
+  background-image: url("./assets/profileimage/Rb4UZcrW-wallha.com.png");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
   min-height: 100vh;
+  /* background-color: #000; */
 }

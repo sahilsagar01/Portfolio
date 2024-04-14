@@ -1,0 +1,49 @@
+.skillCircle_box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+.circleProgress{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    /* background: conic-gradient(black calc(0*3.6deg), red 0deg); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all ease 1s;
+    color: #fff;
+  }
+  .circleProgress::before{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(245, 187, 187);
+    box-shadow: rgb(9, 14, 18) 0px 10px 15px -5px inset;
+  }
+  .circleProgress h1{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .SkillText{
+    color: #000;
+    font-size: .8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .SkillText h1{
+    margin: 0;
+    padding: 0;
+  }
