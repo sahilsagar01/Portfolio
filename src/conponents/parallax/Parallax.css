@@ -37,7 +37,7 @@
     /* color: rgb(213, 101, 101); */
     position: absolute;
     top: 0;
-    right: 0;
-    width: min(30%, 30rem);
+    right: 2rem;
+    width: 30rem;
     z-index: 1;
 }

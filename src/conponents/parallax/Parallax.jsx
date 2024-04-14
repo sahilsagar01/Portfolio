@@ -14,8 +14,8 @@ function Parallax({type}) {
         offset:["start start", "end start"]
     })
     const palnets = useTransform(scrollYProgress, [0,1],["0%", "100%"])
-    const sunX = useTransform(scrollYProgress, [0,1],["0%", "-100%"])
-    const sunY = useTransform(scrollYProgress, [0,1],["0%", "150%"])
+    // const sunX = useTransform(scrollYProgress, [0,1],["0%", "-100%"])
+    const sunY = useTransform(scrollYProgress, [0,1],["0%", "500%"])
     const textBg = useTransform(scrollYProgress, [0,1],["0%", "-800%"])
   return (
     <div className="parallax"
@@ -24,7 +24,7 @@ function Parallax({type}) {
     <motion.h1 style={{y:textBg,color: type === "services"? "white": "rgb(213, 101, 101)"}} >{type === "services" ? "Scroll to see my Projects.": "Technology i have familiar with."}</motion.h1>
     <motion.img src={samo}  className="samorai"/>
     <motion.img src={land}  style={{y:palnets}} className="land" />
-    <motion.img src={sun}  style={{x:sunX, y:sunY}} className="sun" />
+    <motion.img src={sun}  style={{y:sunY}} className="sun" />
     </div>
   )
 }
