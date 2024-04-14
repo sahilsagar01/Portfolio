@@ -15,7 +15,7 @@ function Parallax({type}) {
     })
     const palnets = useTransform(scrollYProgress, [0,1],["0%", "100%"])
     // const sunX = useTransform(scrollYProgress, [0,1],["0%", "-100%"])
-    const sunY = useTransform(scrollYProgress, [0,1],["0%", "500%"])
+    const sunY = useTransform(scrollYProgress, [0,1],["0%", "100%"])
     const textBg = useTransform(scrollYProgress, [0,1],["0%", "-800%"])
   return (
     <div className="parallax"
