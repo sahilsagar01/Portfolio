@@ -6,7 +6,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import resume from "../../assets/resume/Sahil_Kumar_Frontend_Developer.pdf"
 
 // yoda 
-import fighter from "../../assets/yoda/prest-removebg-preview.png"
+import fighter from "../../assets/yoda/mortalcombat.png"
 import fighttext from "../../assets/yoda/hoverme-removebg-preview.png"
 import yodaBackground from "../../assets/yoda/yodabg.jpg"
 

@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(35deg, #fff 0%, #fff 50%, rgb(164, 8, 8) 40%, rgb(164, 8, 8) 100%); */
-    background-color: rgb(245, 41, 41);
+    background-color: #ff0000;
     align-self: flex-end;
     border-radius: 10px 0 0 10px;
     margin-top: 1rem;

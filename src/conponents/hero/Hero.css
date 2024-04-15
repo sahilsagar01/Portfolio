@@ -120,7 +120,7 @@
 
 .fighter{
     bottom: 2rem;
-    scale: 1.1;
+    scale: 1.5;
     opacity: 0;
     transform-origin: bottom;
     transition: 300ms;

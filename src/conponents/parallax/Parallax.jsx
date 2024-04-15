@@ -21,7 +21,7 @@ function Parallax({type}) {
     <div className="parallax"
     ref={ref}
      style={{background: type==="services"? "linear-gradient(180deg, #505064,#fff)": "linear-gradient(180deg, #fff,#fff)"}}>
-    <motion.h1 style={{y:textBg,color: type === "services"? "white": "rgb(213, 101, 101)"}} >{type === "services" ? "Scroll to see my Projects.": "Technology i have familiar with."}</motion.h1>
+    <motion.h1 style={{y:textBg,color: type === "services"? "white": "rgb(213, 101, 101)"}} >{type === "services" ? "Technology i'm familiar with.": "Scroll to see my Projects."}</motion.h1>
     <motion.img src={samo}  className="samorai"/>
     <motion.img src={land}  style={{y:palnets}} className="land" />
     <motion.img src={sun}  style={{y:sunY}} className="sun" />
