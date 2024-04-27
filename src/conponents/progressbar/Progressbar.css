@@ -5,10 +5,10 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    background-color: rgba(247, 200, 200, 0.897);
+    /* background-color: rgba(247, 200, 200, 0.897); */
     padding: .8rem 0;
     border-radius: 5px;
-    border: .5px solid rgba(28, 25, 25, 0.256);
+    /* border: .5px solid rgba(28, 25, 25, 0.256); */
 }
 .progressbar h1{
     font-size: 1.5rem;
@@ -26,7 +26,8 @@
 .progress{
     width: 70%;
     height: 100%;
-    background-color: rgb(245, 109, 109);
+    border: 1px solid rgb(245, 109, 109);
+    background-color: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -37,7 +38,7 @@
 .progressvalue{
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: rgb(245, 109, 109);
     border-radius: 30px;
 }
 .progressvalue p{
@@ -46,5 +47,6 @@
     transform: translateX(-50%);
     font-size: .6rem;
     color: rgb(245, 109, 109);
+    color: #fff;
 }
 

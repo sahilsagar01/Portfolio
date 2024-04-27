@@ -78,7 +78,7 @@ const SingleSection = ({item}) => {
     const image2 = useTransform(scrollYProgress, [0,1],["0%", "100%"])
     const image3 = useTransform(scrollYProgress, [0,1],["0%", "100%"])
     const textBox = useTransform(scrollYProgress, [0,1],["0", "200%"])
-    return <section className='section expSection' ref={ref}>
+    return <section className='expSection' ref={ref}>
     <div className='expWrapper'>
         <div className='expimgCont'>
             <motion.img style={{y:image1}} className='expimg1' src={item.img1} alt={item.name} />

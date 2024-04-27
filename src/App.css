@@ -15,7 +15,15 @@ a{
 .skillsSection{
   min-height: 100vh;
 }
-
+.contactSection{
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.expSection{
+  min-height: 100vh;
+}
 .home{
   background-image: url("./assets/profileimage/lI8q6FKa-wallha.com.jpg");
   background-repeat: no-repeat;
@@ -23,25 +31,6 @@ a{
   background-position: center; /* Centers the background image */
   min-height: 100vh;
   /* background: linear-gradient(180deg, #e4e3e3,#505064); */
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: rgb(255, 90, 90);
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: red;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar-track {
-  background:  black;
 }
 
 @media (min-width: 640px) {

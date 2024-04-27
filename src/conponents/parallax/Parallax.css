@@ -21,7 +21,7 @@
 }
 .parallax .samorai{
     position: absolute;
-    width: max( 30%,19rem);
+    width: max( 20%,15rem);
     bottom: 0;
     right: 0;
     z-index: 3;
