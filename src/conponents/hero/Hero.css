@@ -1,160 +1,176 @@
-.hero{
-    min-height: calc(100vh - 100px);
-    position: relative;
-    margin-top: 3rem;
+.hero {
+  min-height: calc(100vh - 100px);
+  position: relative;
+  /* margin-top: 3rem; */
 }
 
-
-.heroCont{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1366px;
-    margin: auto;
+.heroCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1366px;
+  margin: auto;
 }
-.IntroSec{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: max(1vw, 1rem) max(1vw, 2rem);
-}
-
-
-.introText > h1,h2,p{
-   margin: 0;
-   text-align: center;
-}
-.introText > h1{
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: 300;
-    font-family: "Ubuntu", sans-serif;
-    
+.IntroSec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: max(1vw, 1rem) max(1vw, 2rem);
 }
 
-.introText > p{
-    font-size: 1.5rem;
-    line-height: 2rem;
+.introText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  /* border: 1px solid black; */
+  /* backdrop-filter: blur(5px); */
+  /* background: hsl(0 0% 0% / 0.2); */
+  /* background-color: #ffffff41;
+    border-radius: 5px;
+    /* color: #fff; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* background-image: url("../../assets/profileimage/papertexture.webp"); */
 }
-.introText span{
-    color: rgba(255, 0, 0, 0.886);
-    font-style: italic;
+.introText > h1,
+h2,
+p {
+  margin: 0;
+  text-align: center;
 }
-.profileSec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 22rem;
-    margin: 2rem 0;
-    perspective: 1000px;
+.introText > h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  max-width: 40rem;
+  /* background-color: #00000024; */
+  border-radius: 5px;
+  /* box-shadow: rgba(12, 12, 12, 0.486) 0px 8px 15px; */
+  padding: 0 0 1rem;
+  text-align: center;
 }
-.yoda{
-    width: 200px;
-    aspect-ratio: 8 / 12;
-    position: relative;
-    /* background-image: url("../../assets/yoda/ninjalare.jpg"); */
-   transform-style: preserve-3d;
-    transition: rotate 300ms ease;
-}
-.yoda:hover{
-    rotate: x 20deg;
-}
-.yoda::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    /* background-color: #9ccd69; */
-    z-index: 100;
-    background-image: radial-gradient(circle, transparent 100px, black);
-    opacity: 0;
-    transition: opacity 300ms;
-}
-.yoda:hover::before{
-    opacity: 1;
-}
-.yoda::after{
-    content: '';
-    position: absolute;
-    inset: 80% .5rem .5rem;
-    translate: 0 ;
-    transform: translateZ(-100px);
-    filter: blur(1rem);
-    background-color: black;
-    z-index: 1;
-    transition: rotate 300ms, translate 300ms ;
-}
-.yoda:hover::after{
-    rotate: x -20deg;
-    translate: 0 60px;
-}
-.bg-image{
-    position: absolute;
-    z-index: 10;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.fighterText, .fighter{
-    position: absolute;
-}
-.fighterText{
-    z-index: 1000;
-    width: 100%;
-    margin-inline: auto;
-    font-size: 1rem;
-    inset: auto 0 1rem;
-    transform: translateY(0) translateZ(20px);
-    transition: 300ms;
-   background-color: transparent;
-    text-align: center;
-    color: black;
-    text-shadow: 4px 4px 10px #fff;
-}
-.yoda:hover .fighterText{
-    filter: invert(1);
-    transform: translateY(-1rem) translateZ(20px);
-    rotate: x -20deg;
-    font-size: 1.5rem;
+.introText > h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.fighter{
-    bottom: 2rem;
-    scale: 1.4;
-    opacity: 0;
-    transform-origin: bottom;
-    transition: 300ms;
-    z-index: 100;
-    filter: drop-shadow(4px 4px 5px black);
-    left: -1rem;
+.introText > p {
+  font-size: clamp(1.2rem,3vw,2rem);
+  line-height: 2rem;
+  font-weight: 500;
 }
-.yoda img{
-    max-width: 100%;
+.introText span {
+  color: #034e39;
+  font-style: italic;
 }
-.yoda:hover .fighter{
-    opacity: 1 !important;
-    transform: translateY(-1rem) translateZ(-10px) !important;
-    rotate: x -20deg !important;
+.profileSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 22rem;
+  margin: 2rem 0;
+  perspective: 1000px;
 }
-.introText{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 100%;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    /* background-color: #ffffff85;
-    border-radius: 5px; */
+.yoda {
+  width: 200px;
+  aspect-ratio: 8 / 12;
+  position: relative;
+  /* background-image: url("../../assets/yoda/ninjalare.jpg"); */
+  transform-style: preserve-3d;
+  transition: rotate 300ms ease;
+}
+.yoda:hover {
+  rotate: x 20deg;
+}
+.yoda::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: #9ccd69; */
+  z-index: 100;
+  background-image: radial-gradient(circle, transparent 100px, black);
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.yoda:hover::before {
+  opacity: 1;
+}
+.yoda::after {
+  content: "";
+  position: absolute;
+  inset: 80% 0.5rem 0.5rem;
+  translate: 0;
+  transform: translateZ(-100px);
+  filter: blur(1rem);
+  background-color: black;
+  z-index: 1;
+  transition: rotate 300ms, translate 300ms;
+}
+.yoda:hover::after {
+  rotate: x -20deg;
+  translate: 0 60px;
+}
+.bg-image {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.fighterText,
+.fighter {
+  position: absolute;
+}
+.fighterText {
+  z-index: 1000;
+  width: 100%;
+  margin-inline: auto;
+  font-size: 1rem;
+  inset: auto 0 1rem;
+  transform: translateY(0) translateZ(20px);
+  transition: 300ms;
+  background-color: transparent;
+  text-align: center;
+  color: black;
+  filter: invert(1);
+  text-shadow: 4px 4px 10px #fff;
+}
+.yoda:hover .fighterText {
+  transform: translateY(-1rem) translateZ(20px);
+  rotate: x -20deg;
+  font-size: 2.5rem;
+}
 
+.fighter {
+  bottom: 1rem;
+  scale: 1.5;
+  opacity: 0;
+  transform-origin: bottom;
+  transition: 300ms;
+  z-index: 100;
+  filter: drop-shadow(4px 4px 5px black);
+  left: -1rem;
+}
+.yoda img {
+  max-width: 100%;
+}
+.yoda:hover .fighter {
+  opacity: 1 !important;
+  transform: translateY(-1rem) translateZ(-10px) !important;
+  rotate: x -20deg !important;
 }
 
-
-.buttonCont{
-    display: flex;
-    gap: 1rem;
+.buttonCont {
+  display: flex;
+  gap: 1rem;
 }
-.buttonCont button{
+/* .buttonCont button{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -166,114 +182,146 @@
     background-color: #fff;
     color: rgb(178, 7, 7);
     height: 3rem;
+} */
+.buttonCont button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  background-color: #0b6940cb;
+  border: 2px solid #fff;
+  backdrop-filter: blur(2px);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
 }
-.buttonCont button:nth-child(1){
-    background-color: rgb(178, 7, 7);
-    color: white;
+.buttonCont button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #0b6941;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
 }
-.seemore{
-    animation: blinking 1.5s linear infinite alternate;
-    height: 3rem;
+.buttonCont button:hover::before,
+.buttonCont button:focus::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.seemore {
+  animation: blinking 1.5s linear infinite alternate;
+  height: 3rem;
+  filter: invert(1);
 }
 @keyframes blinking {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
 }
 
-.stack{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    margin: 1rem auto;
+.stack {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin: 1rem auto;
 }
-.mongo,.express,.react,.node{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.mongo,
+.express,
+.react,
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.mongo p{
-    color: #00684a;
+.mongo p {
+  color: #00684a;
 }
-.react p{
-    color: #5edcfb;
+.react p {
+  color: #5edcfb;
 }
-.node p{
-    color: #9ccd69;
+.node p {
+  color: #9ccd69;
 }
-.express p{
-    color: #fff;
+.express p {
+  color: #000;
 }
-.stack p{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin:1px 0 0;
+.stack p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1px 0 0;
 }
-.mongoImgCont,.expressImgCont,.reactImgCont,.nodeImgCont{
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mongoImgCont,
+.expressImgCont,
+.reactImgCont,
+.nodeImgCont {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.stack img{
-    width: 100%;
-    height: 100%;
+.stack img {
+  width: 100%;
+  height: 100%;
 }
 
-@media(min-width: 480px){
-    
-    .introText > h1{
-        max-width: 40rem;
-    }
-    
+@media (min-width: 480px) {
+  .introText > h1 {
+    max-width: 40rem;
+  }
 }
-@media(min-width: 640px){
-    
-    .introText > h1{
-        font-size: 4vw;
+@media (min-width: 640px) {
+  .introText > h1 {
+    font-size: 4vw;
     line-height: 6vw;
     text-align: left;
-    }
-    .introText > h2{
-        align-self: flex-end;
-    }
-    .introText{
-        max-width: 60%;
-        align-items: flex-start;
-    }
-    .stack{
-        justify-content: flex-start;
-    }
-    .progressbar h1{
-        font-size: 1.5rem;
-    }
-  
+  }
+  .introText {
+    max-width: 60%;
+    align-items: flex-start;
+  }
+  .introText h2 {
+    text-align: left;
+    text-align: justify;
+  }
+  .stack {
+    justify-content: flex-start;
+  }
+  .progressbar h1 {
+    font-size: 1.5rem;
+  }
 }
-@media(min-width: 768px){
-   
-   
+@media (min-width: 768px) {
 }
-@media(min-width: 1200px){
-    
-    .introText > h1{
-        font-size: 4rem;
-        line-height: 4.5rem;
-    }
-    .yoda{
-        width: 300px;
-        justify-content: center;
-    }
+@media (min-width: 1200px) {
+  .introText > h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .yoda {
+    width: 300px;
+    justify-content: center;
+  }
 }

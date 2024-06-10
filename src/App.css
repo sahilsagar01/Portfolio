@@ -1,31 +1,33 @@
-
-body{
-  background-color: #fff;
-  color: #fff;
+body {
+  background-color: #eae5d8;
+  color: #000;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-.section{
+.section {
   height: 100vh;
   font-family: "DM Sans", sans-serif;
 }
-.skillsSection{
+.skillsSection {
   min-height: 100vh;
 }
-.contactSection{
-  background-color: black;
+.contactSection {
+  /* background-color: black; */
   min-height: 100vh;
   display: flex;
   align-items: center;
+  /* background-image: url("./assets/profileimage/papertexture.webp");
+  background-repeat: no-repeat; */
+  background-size: cover; /* Ensures the background image covers the entire element */
 }
-.expSection{
+.expSection {
   min-height: 100vh;
 }
-.home{
-  background-image: url("./assets/profileimage/lI8q6FKa-wallha.com.jpg");
+.home {
+  background-image: url("./assets/profileimage/white-parchment-paper.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
@@ -33,13 +35,35 @@ a{
   /* background: linear-gradient(180deg, #e4e3e3,#505064); */
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #1e6b83;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #175264;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  /* border-left: 1px solid #000; */
+}
+
 @media (min-width: 640px) {
-   .home{
+  /* .home{
     background-image: url("./assets/profileimage/Rb4UZcrW-wallha.com.png");
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures the background image covers the entire element */
-   }
-   /* body{
+  background-size: cover;  */
+  /* Ensures the background image covers the entire element */
+  /* } */
+  /* body{
     color: #fff;
    } */
 }

@@ -1,82 +1,80 @@
-.skills_wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-color: transparent;
-    min-height: 100vh;
-    width: 100%;
-    z-index: 2;
-    
+.skills_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 2;
 }
-.skills_wrapper h2{
-    color: black;
-    font-size: 2.5rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    align-self: flex-end;
-    width: 90%;
-    text-align: left;
+.skills_wrapper h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  align-self: flex-end;
+  width: 90%;
+  text-align: left;
 }
-.skillText{
-    padding: .6rem 3rem .6rem  1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient(35deg, #fff 0%, #fff 50%, rgb(164, 8, 8) 40%, rgb(164, 8, 8) 100%); */
-    background-color: #ff0000;
-    align-self: flex-end;
-    border-radius: 10px 0 0 10px;
-    margin-top: 1rem;
+.skillText {
+  padding: 0.6rem 3rem 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(35deg, #fff 0%, #fff 50%, rgb(164, 8, 8) 40%, rgb(164, 8, 8) 100%); */
+  background-color: #0b6940cb;
+  align-self: flex-end;
+  border-radius: 10px 0 0 10px;
+  margin-top: 1rem;
 }
-.skillText h1{
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 0;
+.skillText h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
 }
 
-.mainSkils{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
-    max-width: 700px;
+.mainSkils {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 700px;
 }
-.stackExp{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    justify-content: center;
-    margin: 0 auto 1rem;
+.stackExp {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0 auto 1rem;
 }
-.stackExp h2{
-    font-size: 4rem;
-    align-self: flex-start;
-    font-weight: 100;
+.stackExp h2 {
+  font-size: 4rem;
+  align-self: flex-start;
+  font-weight: 100;
 }
-.allTools{
-    width: 100%;
-    margin: 1rem auto;
+.allTools {
+  width: 100%;
+  margin: 1rem auto;
 }
-.skillbackg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: min(20vw,18rem);
-    z-index: -1;
-    
+.skillbackg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: min(20vw, 18rem);
+  z-index: -1;
 }
-.skillbackg h1{
-    font-weight: 100;
-    position: absolute;
-    margin-left: 2rem;
-    color: #f19a9a4b;
+.skillbackg h1 {
+  font-weight: 100;
+  position: absolute;
+  margin-left: 2rem;
+  color: #0b69400f;
 }

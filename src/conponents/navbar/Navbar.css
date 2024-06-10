@@ -1,45 +1,52 @@
-.navbar{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrapper{
-    max-width: 1366px;
-    min-width: 90vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 70px;
-    padding: 0 min(2vw, 20px);
+.wrapper {
+  max-width: 1366px;
+  min-width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70px;
+  padding: 0 min(2.5vw, 25px);
+
+  border-radius: 30px;
 }
-.wrapper span{
-    font-family: "Ubuntu", sans-serif;
+.wrapper span {
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 2rem;
 }
-.social_cont{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-    width: 100%;
-    border-radius: 30px;
-    background-color: #cbc9c952;
-    backdrop-filter: blur(20px);
+.social_cont {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #00000014;
+  backdrop-filter: blur(2px);
 }
 
-.social_cont a svg{
-    width: min(40px, 5vw);
-    height: min(40px, 5vw);
+.social_cont a svg {
+  font-size: clamp(30px, 4vw, 40px);
 }
 @media (min-width: 480px) {
-    .social_cont{
-        width: fit-content;
-        margin-top: 0;
-    }
+  .social_cont {
+    width: fit-content;
+    margin-top: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  .wrapper {
+    background-color: #00000014;
+    backdrop-filter: blur(2px);
+  }
 }
