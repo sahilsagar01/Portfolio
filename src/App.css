@@ -27,7 +27,7 @@ a {
   min-height: 100vh;
 }
 .home {
-  background-image: url("./assets/profileimage/white-parchment-paper.jpg");
+  /* background-image: url("./assets/profileimage/white-parchment-paper.jpg"); */
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
